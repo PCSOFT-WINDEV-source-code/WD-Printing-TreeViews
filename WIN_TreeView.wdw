@@ -1,0 +1,388 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : WIN_TreeView
+ major_version : 28
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : WIN_TreeView
+ identifier : 0x268ce11802ec7546
+ internal_properties : CAAAAAgAAAAzFi2VqGV5aLMwOpOR7Rtny2DcWvy/NvYm/RS1OB92A602s1q/7qDuUjNuOQhC+Gw9wmDOBKMBZLYjCS8e8wAkAljCbajRgxRfFnSPJ3tiL4ax4p3llIjVzhT8ATrKPG4YxnXpVpDNSOY8sIXqiu7S1AU8Q6832/qe7GkWhRZqigBWfeLiYkWI4KUrnp2ZA9qzREW9COX1NIow6yQSD0apDF5FmYPNKqo31rd0TeI4hqR0p7iyF0bmmHsaQ6xd3+IocNTRwGSpNnpUHmeMjEEbrPBN7jdsMHXg+kngFrNxmRBPx7WLRucS3sRtqY5IuZdIu0i6m/RA0KsDHK3YgbgN9Nexyadg6s958e3F/5JroI4xQj38iijOFItosq1ylChCpZ5r1UZbbVWwBR3WbircsMyioYjtO3CjngeLhq7bEGMmp/AS7IMTLvwj/FAI56SO17SiruiMvM4ZGutJPJ15eljlo2wvzcQFaiT8pKEecR32Geq0nSWMbcxDMip3Rp0I9PTCyjHh6ErJT3S6mcP8yrNqzFZkiD1bRrGaoCxRqj46J3W5cxofKC3beXBLXL91z5dF4T5LsiZzQXwoLEb9mZDTkcJr35KDYBg72j8v9vvAk2MGvFEpzBYJ5HWSEYDS7kUM2cDCz7K9PGHXgjBuvOpjvvjNRDvv+e7BNVa6O8ED6gQq5RyhME06HeeAi4aRR54RmwmDljwx5b58AxL2yk0P29hX8VaFoYJPfX8VprTIaiF1uuhbz+QGoG+NptphmJf8ENxERYgtFmFaHuoqcmCIIG0k3Afa+N4FJd7NSLCrpQPV1SvGrCts1RhaLwxJEvlZK4Ud1/nWt65Vu3iddklYz/ZjQ9Troeb+ioRmA+mfrqKS
+ properties :
+  width : 452
+  height : 662
+  widthClient : 450
+  heightClient : 630
+ controls :
+  -
+    name : BTN_Exit
+    identifier : 0x268ce11802ed7546
+    internal_properties : CAAAAAgAAAD3WRXmIKVDllRJUyfjfqDGUlIPpdjbenjU2ZSlYH0Ej965ey9AErQKsiBsnSD8zQm1RTO0FfWRsgO6hhDQok8DThUYWFSzchocCPfsmmYJXWN52lD3/XqwwFy7AYqJRUompucyy9X3BeGtFbJ8XlVbHGCnvP6dCx/3ank+v7DJKLJbozylYE/GslNS1kOl4E0Ek6Ke7S0Uhl6jNBJXk933df9xxxwl8wqvo4Zc6SxUT2vowhwlStahw+U4ox/JSF2OI93UOCXmQEItm9d99ELxbszXktoPJuxvDIf9OJnAqSMWtwbrCKjI4tGNBRmNuH9ZyAsT54HgjUcbyD2gX3RwcYARW9jJF0wSn+xsabx/vqy19s9/WRKXQi28N3OniEt/ZoccitJ96zIN/i/a8QSBylO4V2T2DqaSRi1HAoNjI+Eifj3W3whXrTDotE9CnObNbS9clgXSB2hqwwFgFEH+yXZx2tpi/ojQt4kNo0FB/c+CvWtFyXiDbVByytbZ0GLdGPlLpFp59NxdLAB2uqCu1W3C18pq5prPWz5hAGODJfxopOA8b896Ei7c6lAOCOroIaMFjUMiRjCx/nnDJaw48SczhBV/5WxEQjgKKy7mkamj4ehH/6tR1Kt9JMBzy08uCjjK8io+M3GLlvJ3QQ8saK8G24buVEGxmlwj2ycHmG/4WHKtl+fZwjFNWtIgZpukoV2zEFXEYnnePNU19A1XJvfW5bb2zZC+CKBBBiPngUz06nK95rSC/TP5natNHQVNlASSBplHJ4XmF7t3bqN15xj4WEu7Qt+9KjsqJxGZ/nszcRHkPdk3tVesPl5TODxOZBgzDbjchy3n3Lzo1OcsLHnv2/HPlN7cFhwN4XZQAPOof3ko36rBCP3e+fQ/4d/B3OWX6GTUE0tBGLFiHsdVK6HjIPM1qbNIwBlVX1Sq61Cc2kJzz56mBK2j3eXbBD7KXg==
+    properties :
+     x : 335
+     y : 600
+     width : 109
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        internal_properties : CAAAAAgAAADQZyvpRjJZltgKBVFD+SKMukTEU1n2G2jmPSjnx1ZKdSF2vB36egNKcReVrz/xwpIZdIpZoyUu0CjPxu+MpGLAedmE/39iAmJIcu72BpKoWkpseLXy2lnJGPSMFw==
+        code : |1-
+         
+        type : 18
+      -
+        type : 161
+        enabled : false
+      -
+        code : |1-
+         
+        type : 66048
+  -
+    name : BTN_Print
+    identifier : 0x268ce11802ee7546
+    internal_properties : CAAAAAgAAAA8hmnEKNGSzAUyXfMwu2KgTpNukfFBY4tfcmul9tSh8IeJd9nXbUujzsjy2p91212fKzYg+qf17vycPMBnAJNq6Oi3KIGCrwLUnBXkbRrdbbQ0QmFglzqR/uzdsIKnE6kobBaEMsbws8PBnQSWXxEOPs6ZUVel8r3EsoiJMrlvUYlfQ65OUCyj+qONkB9ATt/2LTZz5FtBZbziT9b2BRNNbSQUbMJ2cwsxJauldn5XXO4oTM7U7VR2jcfcxK66Ifh93pRE/8qeUwD20Sy7aWIeuxwtmcEzFp+qXYZobBNh5Ee72ONtp7bG59TIaGYk1Y/tImAWhflq1fkrnxZYToFnnuJ6l6RBB7LHtYw4Lwq71K40d7WfN7SVksVbZN0x51TMemuzV45f2LORscqrqtflC3/oa3O/TtxfyX/6Iy9lYJ8+ASyFxs5+vYxIuARaVx8CDAlCdDxJWnD5Ec2moVwRGXtFRoAzoH8ZyWXeFap8Jw6YQcMnXoFayPK1VG5JtXcfo9ZgNpz6Aat+SIC9Pit2HGxlzUEx1uzFP2kE8UNJVgFhGzivAirgM18fjCqxR/CbVZTRTUcbjj8K1zXsoj3xytppysqUf/6YHnHtPvHKEExaPFf1tUBF8VFjCx+uN/DnTdgnRLrUzdScC7GZJhQbZy852tYk8WfZ4j064Z5+4JdvF4GP6Unsi1WtYfE65r1H9UB+z3sStVmKG8Ru6jqTnQcRNaamWA5WNsmYCR1ZxUwnqDzhjtW7UJghnXmWbCJHq3TrNqeip6PqZfdg/zZAnPK2U2vVWMrzq0+WQ+hAxJeh5HGm8ZZvv1B3jyBVIAYPXe1SFt9iG6xpEQMNyB61gYa/8KUJRQYsjA/U2g6igOXTDeuVIOxaPKENf2cbpUuLC7MmJc6a6OVwD5083DsLp9lESrXsAd4HcJJuQOMPm/m74PUqXqU=
+    properties :
+     x : 6
+     y : 600
+     width : 109
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        internal_properties : CAAAAAgAAABNBKOU/oLpc16dHmuiUWDJFAojPBkRcdjL9Mm6vT+SgF8z4pF3X6ZNnAqkqNutDanL9NQdRBfYw2MmpoL5XvzmYgySppdeqwaOT4falESn/TtwBZPuWg9GAldhO9I+5XUVr8ZRuID7WOtVAAkgxipM3XOfbf+TumDhLoI1xlaYzUc92fCJbhd5MyKq2Lg3YqE=
+        code : |1+
+         
+         iPreview(iPage, <§$0029§>)
+         
+         // Instantiate and intialize the object 
+         clTreeViewPrint is object cTreeViewPrnt(WIN_TreeView.TREE_Category..Name, RGB(127, 157, 185)) 
+         
+         // Print:
+         // Title: 
+         clTreeViewPrint:PrintTitle("WINDEV ", <§$002a§>)
+         
+         // The TreeView: 
+         // The first level of the TreeView and the expanded nodes will be printed. 
+         clTreeViewPrint:Prints()
+         
+         // End of document: 
+         clTreeViewPrint:iPrintEndDocument()
+         
+         // End of print
+         iEndPrinting()
+        type : 18
+      -
+        type : 161
+        enabled : false
+      -
+        code : |1-
+         
+        type : 66048
+  -
+    name : STC_Explanations
+    identifier : 0x268ce11802ef7546
+    internal_properties : CAAAAAgAAAAw9PEF9UZedwDtxexhA3+WAhj1GLVzilgeRubJJaqK0nyb39oxBnjxhSLb1AwKuSYkyL8xmOHAy1r9tPq1qyxfGNhPGPI9Pf2HF5n3OsYtHr3K5whAn/v4Wu9Xfe9gdAfIT6fPZNCubz+4cLwiTcG6HIXK2lw6gx5hZaL6RQCpQXaVO29PbGgH0VjJQ0H9znm5L4UKg+YUztj2P+jl9NFmLUS1qm+iJjigNOQc6tVtw2DrcW8tMimPgCeUFq8Bx9IiaN0cHKOeb+DnUEgtf+lGBlScxuS6wcHgW0ZL0cuwK9eo7lUwbcLFFadb8m4xgYA0cUMpcqmnelKcWRStKPT9UJ/DQJyVGLmhPJmiN73veknQwmhhapU6Vw6M3x8QPmX68zjtui1JrM5qzWYDRSQ21cB3KmzVQUcnsCyBJ9m5YaVDlsvkd+aTphF9LoTxdj45VPi/KvBB4Y/ZJVUjWSwYLM0QK9uLAoIoXRixkBAAZeosq+mwafGbiKb25m0WxaQDy0HYY4pK3IP2dxLOfsqfQrVf7FF7Qg7slJuJzzbXYoJiSmdq0l/thPa0uFrRLHiNo2Lbq8Ueh29yVU2muvLbEMkIOh35hUd00zW3hr0HO+kV+zdnjubVz0xKsoY/VgzdNkhz5i1gq7pGfVqPsV4/5/Lt90dlA4tFc5KPN1uyjApuX56E+zDDC8z3og9GXMKJIh5tsi13bcM0IIOaUG2Szc3XTClqXtL4
+    properties :
+     x : 6
+     y : 2
+     width : 438
+     height : 53
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : TREE_Category
+    identifier : 0x268ce11802f07546
+    internal_properties : CAAAAAgAAABbELSIPGgmiGgzIRknNwAVKNG+PdUsWf8a0Wwd6ZfR19CrrT2NkytTvY9WmUOU6rJ7fY1OAwFv8xGJQ46J4hqzilqncnqEFo7bzfwdkQ9uaHOYsaHlQlBLoWNNltPzmaK0Lr7/SzxY1tc0xB03C6BCbUHOJopWNDBt0MP2xFrva8sN2NkbfTjTiOyGeh32DiQZz37r0UAWJc/wZO/KxGPGDLE4aw0xgvCnQREUIsS0jtdCa/YiIqbpN8uukP7HyqCFY3JySTMTZl9lNusjX8NeCid1sjgqTm+LuSKYSXHIVy1XWuaP3EGUpGbiMocccP4nXBH0Xy3W8245dv+t0/zbYzd66p0vZj1U8SPYtVLfcKQKrxYg0GTWcWWCpfv3l34zmnsE2zbyzw03l2s91+rhNTHeaNCBps2wRYMxZPoM4El+vZpg5NFv6NBsV45pTTJ/eBTStlqq8S4AaY+OMHb28cISJnEvRG8qZBlfb86OY3EHGpd9BhhF3NnJM+Vuls1Hogd/WaEOjnDFGlFel8P0YLlHjKB+BonY5wbTEU6Z+hui+uSSSJOZ3vS6YlUH5uiHNEKZH6Yj4zGyxJz5YpyWms3+8NzSU0+b8y+SrEGm3rUei4WVwKr4cJVyoonx59yWFaaNYk9Ix5qHLxsKDJu2Whkm/vZ2gwIyA9D0QE47l8ZvoS0GjXpFPA0DL5qZRZLycDH2qMIYH0KF29KwupvqTRNcy8ij6X5s83GWE4McY4ZEJa6aCYLJJGGpRboAk70noS7jjUaCbxmO77ptcY/eMw4C1sx7sSjYBTiGVSspJkc8VO6me83tBdhRl3osyEzTKj2QZ2YnTtqNcZwXq+blj7fIj5xpEK3Uu39tAQ6FY0XNTYqM7ixzZKiu9nz6mqN+zC+9lcRak6pRP2jYoeFQ2hAbcx+TND1Bw1y9ZM6RhFjT+qmhXC1jLzDmJl3up5U0sm1l7VAkmKrh7Zwa+AXE/aqbaG2yaLFHgIyA10pCZxxR5har4gZ2xvJ/mna5wMLWHHImi4bSaI/HumRNqw5Gjfb1Qzd6APgIEKbNz8fLFGZqvFr/R+xCp2kRot8BQQZnM9Aj5p2lDsxVvLuZbqV/cDEqRWMxthSQv87PXn896KOlBpxM5GcWpwxRkDa7s8iz/NJN/s+hUe5rI83J9yiV2GsH3aR6XIxBYliKoHRGn8y4cdI2pJ0V6t5jnUPLSLFySiBD1hbOlOYZ4tFTzT6LW61T2KKFlJCfb2gIt3s3xX6Gqm133/u+eN8I8g4sYwSK5CERe8DRyKojpX586Ql8HXrokoIEPoPa/E4Scn07BRIjod/Ts9s6Ak9okkU+mPkrwBbZA1At4gRywIZPGz/UacrFjxzflnGXZceJL5AergmJMQJRL1vOQF42OCt1tJ6/85+vMzCMyflQ5Sbp6qcHPOC6kQiLd/4meuF5IU793lSf+OPwrCrpW+pViLdvBwbzkZTYgBubAsHpcn4QqmzvE4oZR3IPS6NIch6FWzQMDApdDCSskFHm/EJNG1UjVE0Dmqa65zRS0w==
+    properties :
+     x : 6
+     y : 68
+     width : 437
+     height : 525
+    type : 19
+    code_elements :
+     type_code : 25
+     p_codes :
+      -
+        type : 19
+        enabled : false
+      -
+        type : 20
+        enabled : false
+      -
+        type : 17
+        enabled : false
+ menu :
+  name : _Menu
+  identifier : 0x24a128f707da4f6d
+  internal_properties : CAAAAAgAAACCv199ARoPUfG3WAPSG9eefhOOjWMQrs8CrX6cGGGJPoSHWBq4PXhStOWc1YnAZMZ5+EFR1WTDn8CTOTiyLnXPpAR5X8rsRkPZrm1yZeYDDt4kRzDPLbUf4Sh/mD3kd1D8V2drCFLmjeQhgpw7GKGwHRga+ZdjSqXGIC3LD1RracZ230hOmUJTj+ABDW4IHrw4PflmVGgp8E9KnAf/gselRrzEY90l3Cr9N00QijFYYrbrl4qF4kdim1YX6jYT4ezQhbJsU84ENZsxzq+o0JVHYQ8rxck600VhGV04/ao=
+  options : []
+ languages :
+  - en-GB
+ popup_menus : []
+ message_bar :
+  internal_properties : CAAAAAgAAAAE5xwqTPrSI2ETy1yvoDXwK3I3BKluF13f/qmnJBYmcnT5URzENlJkd8OEeHb7S/8VYu6eoH4GJuSyXtet4GeltTh1kwa4vKEu7upWCNjCyUDpjIbSBqGGisgRtJfAb/w=
+ actionbar : {}
+ code_elements :
+  internal_properties : CAAAAAgAAAA9xFy+v3bQjktgmzDlfRIPl0/qU3KCKPOZNuT+02CUO17/yvmitMe9+gl+7E4HkaHzdq5V7qg4xeXIN1GOJJhY4rUh8AoCaII5ylI2cyX2C/927MaGKhpD4JgQBRo/4s/5Kkcda2bc23iXPu/4HFpzqY+3EEJoAH/Q3YljNLdeIMmbVxKlvSmhL6+UluGlx9gJ1VXRYN//mMmJgY4HO+J/Zob77joP2lf561omjRLkLWsMMNY9KOM3Z2U8iP794wrcPLAsQE8lWhKiJatnNCmV4bUxuyud5zhpB5qFYfcCIQ==
+  type_code : 1
+  p_codes :
+   -
+     code : |1-
+      
+   -
+     code : |1-
+      
+     type : 34
+   -
+     code : |1-
+      
+     type : 234
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     code : |1-
+      
+     type : 2
+   -
+     code : |1-
+      
+     type : 11
+   -
+     code : |1-
+      
+     type : 12
+   -
+     code : |1-
+      
+     type : 17
+   -
+     code : |1-
+      
+     type : 13
+   -
+     code : |1-
+      
+     type : 66048
+   -
+     code : |1-
+      
+     type : 65541
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : FenTreeView
+resources :
+ string_res :
+  identifier : 0x10db05e30006d4bc
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+  strings :
+   -
+     text :
+      en-GB : Images.WDL
+     index : 0
+   -
+     text :
+      en-GB : Parameters
+     index : 1
+   -
+     text :
+      en-GB : Stock
+     index : 2
+   -
+     text :
+      en-GB : "0"
+     index : 3
+   -
+     text :
+      en-GB : SecondHand
+     index : 4
+   -
+     text :
+      en-GB : "1"
+     index : 5
+   -
+     text :
+      en-GB : note.gif
+     index : 6
+   -
+     text :
+      en-GB : tools.gif
+     index : 7
+   -
+     text :
+      en-GB : truecheckmark.gif
+     index : 8
+   -
+     text :
+      en-GB : falsecheckmark.gif
+     index : 9
+   -
+     text :
+      en-GB : Display the second-hand products in blue
+     index : 10
+   -
+     text :
+      en-GB : Display the empty stocks
+     index : 11
+   -
+     text :
+      en-GB : secondhand
+     index : 12
+   -
+     text :
+      en-GB : stock
+     index : 13
+   -
+     text :
+      en-GB : Hover this area for more details...
+     index : 14
+   -
+     text :
+      en-GB : This window is used to display a list of products by category and by family.
+     index : 15
+   -
+     text :
+      en-GB : "The TreeView contains the categories and the families of the different products. "
+     index : 16
+   -
+     text :
+      en-GB : "When a category or a family is selected, the corresponding music instruments are displayed in the table on the right."
+     index : 17
+   -
+     text :
+      en-GB : "The last menu of the TreeView (''Parameters'') is used to configure the display of the products. "
+     index : 18
+   -
+     text :
+      en-GB : "You can: "
+     index : 19
+   -
+     text :
+      en-GB : "- display or hide the products whose quantity in stock is equal to zero"
+     index : 20
+   -
+     text :
+      en-GB : "- differentiate the instruments for sale from the rented instruments"
+     index : 21
+   -
+     text :
+      en-GB : QryProductsByCategory
+     index : 22
+   -
+     text :
+      en-GB : hollowcircle.gif
+     index : 23
+   -
+     text :
+      en-GB : .SecondHand
+     index : 24
+   -
+     text :
+      en-GB : Printing TreeViews
+     index : 25
+   -
+     text :
+      en-GB : WINDEV
+     index : 26
+   -
+     text :
+      en-GB : Hover this area for more details...
+     index : 27
+   -
+     text :
+      en-GB : .\images\
+     index : 28
+   -
+     text :
+      en-GB : .\images\tools.gif
+     index : 29
+   -
+     text :
+      en-GB : .\images\note.gif
+     index : 30
+   -
+     text :
+      en-GB : .\images\hollowcircle.gif
+     index : 31
+   -
+     text :
+      en-GB : .\images\truecheckmark.gif
+     index : 32
+   -
+     text :
+      en-GB : .\images\falsecheckmark.gif
+     index : 33
+   -
+     text :
+      en-GB : "This window is used to display a list of products by category and by family.\r\nThe TreeView contains the categories and the families of the different products.\r\nWhen a category or a family is selected, the corresponding music instruments are displayed in the table on the right.\r\nThe last menu of the TreeView (''Parameters'') is used to configure the display of the products.\r\nYou can: \r\n  - display or hide the products whose quantity in stock is equal to zero\r\n  - differentiate the instruments for sale from the rented instruments\r\n\t"
+     index : 34
+   -
+     text :
+      en-GB : Parameters
+     index : 35
+   -
+     text :
+      en-GB : Stock
+     index : 36
+   -
+     text :
+      en-GB : Parameters
+     index : 37
+   -
+     text :
+      en-GB : Parameters
+     index : 38
+   -
+     text :
+      en-GB : Parameters
+     index : 39
+   -
+     text :
+      en-GB : Stock
+     index : 40
+   -
+     text :
+      en-GB : Printing TreeViews
+     index : 41
+   -
+     text :
+      en-GB : Printing TreeViews
+     index : 42
+   -
+     text :
+      en-GB : Hover this area for more details...
+     index : 43
+   -
+     text :
+      en-GB : Hover this area for more details...
+     index : 44
+   -
+     text :
+      en-GB : ConfigSecondHand
+     index : 45
+   -
+     text :
+      en-GB : ConfigStock
+     index : 46
+   -
+     text :
+      en-GB : ConfigSecondHand
+     index : 47
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+associated_test :
+ name : TEST_TreeView.wxt
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

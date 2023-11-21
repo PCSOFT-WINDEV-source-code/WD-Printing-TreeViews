@@ -1,0 +1,145 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : WD Printing TreeViews
+ major_version : 28
+ minor_version : 0
+ type : 4097
+ description : WD Printing TreeViews
+ subtype : 0
+project :
+ identifier : 0x0
+ internal_properties : CAAAAAgAAADIugUdss39GQYlsCuAQ8vtQ6Ic1r3xuFXntkWpLbMa7xWcNQPROIzOwtjuKAjwRq55OxoB5mFy0vYrwHQOQg8c5uoBr6OMmSzgLwxxSbVdRnQnhyHZ0YxK+UXl2YZgdDtcGtouPPmzJ7Rwq1LxIs4g5U1+d1rrpE5Hzo3RKXQ54AeywrMunAbcAS0mTSrLVsMBKaTkRMx/4PCK0cQw4nhgpm45HfqYpoHXiKNDGTpS9UkXJ1YVbrlic0Dh/QDkVXsTIeP4hEKswdNBD+tK0io8HoCNs5+kgAew2MGAxDsYwV9QwwKYXwgMjr2W+a0ytvuZNqlpGr+U9wp+0e3+NvN29fK5bvBmxsd9r3jTsXSVsghhG3wP0X0t+p56aewoN/H5Jtx1JTdoG41cwBhp85uF/elRSlQg7dVRxomsxQOu7eGVSgunKHPuE/lHaM+lbdqpySxRmRJLw4uiSpVUgjbeDlPNOTrKeW+Ljx4hJDkJ46R9W0eXccB/HY5d1hlVSeoP+AceB9HQynXJkQH5NoVjb0yNmtIotRowU3Ha0mp8NQhkrpSvmNqHYLXM41IiJhDVjbkh1y6IVhuoxxRZVhe7RDuN95M2dnmFR4WLNWsEzN0NXURLieHmd7PtBFnAU7uxQ07kt/mwy8acpHPbOsN16EgMiq/nCAUTMnOXMq9vgHZdL7N356oD2mCyMfm6PfKgnTWB9ne7JiImkGW6U6hoO+lSQoEVGQ8Jjc28A6u86J5pg3qacOYcYDDDRFfAW4UoO7PT3eq3YgFwxYgWayjHYmQYSdfDIFouHop0gleaOaFimFMJjAtMWKT8ar4YNoJS3IQu/HJrCjJltWwjNshEe8iO4Zf9d5BbPmV/iC/AebTvTGcLwPgtZdyA+IwjJoA6s8Mk7bLh4zPvg3ZpCPZzXrA6GWMyl5iqtDQdl422tjgkLl8qgupw/qG57ThsPdBoMyk+ghLF3ffseZOHHqnl2NbfkGL9JKiJvXQA+80lmYFXnbMlr6NEb1JxlR/h7VImenTV9gKNW1ux5OshQEruD5n1Tcw0JwQSLMNMUYF6dMZXPjdtI8jNw3VZOsTtroS2jpbKClB0sWtUNyvHZyYXEayj/HAzPS4BnPCJy4Na0xovtpdSfyJWSVl28lH8erDxcTDLSDBHYhRqFGtRKLcgsuHVkeJN1fCYADgC8BAbPFb4d8UWSDO8b4PHrzk8d+dQghG2FGcr/tvLsD1w4Nnx5vdzXinsKQa7gRGrlPt27GGbBVupSDC5TgHtnmuNdcMyXgMJXNyXAKMV9QfHigTrobO6xJzcb5eAjO3b4SdEdFzqjLJxU8ag+ORe4Xxw00Y5yThQhHxXgnAsJQwqGfuFq+8vZUuC2MQ61pCQZrjem7a0AoCvGad0LobHQGTc6VNbN426wPnzSBjjKZ8NCi5KTzjXqRTJBw1Ry020aOzKOe3EpWvKbhInwNQODmG/CBJGPA40jgVCqh1yReMBBK+hzyjYmCBeP8JN9Vf97HykpFYCvsK4s7hSq2KfadnZN7jMvWPJvFV8Vb7xKzaIjoPGdSHy/DVwBMh5PEj2/aRaeNqmnmpqtrioNhfrTCHAZZVv+c+V+WHBCnHXuuctXoCfOHextI2Mjdd8IVRBcCy7Ex2MA966GPyBIy7yt2ZGL/fX6dUn2Wq6ktZy/lyxFYwpzNGKMjsX6lRyUd9KtWRt3zeO7n6WVreqyZVRD182yITkfBMUNwRWJP/3OfRkGPF75SNpL+pLay/ADSME7MfO2xHUkoLHyTx2GWFJ1AFeuUlIIQma3ljsxf8YJCuvxunk1LxPjQY5FRW7cdogPikb4oeoruxmFL8IgcC7TmmKcFQKyW/6SQrPJkFf8WWuTxFqi2/gLrrqlEUXPvRL0ZHW+0Ge7RgDaBuTkpGYG5tuZL0cWAhBFKo2lXMEI8u4cOlttbqB8bXlxXzXnSbk0ypIdeVmGy9oS+ut47N0POzo8CTdMaHx4Mw8GdcK/VwIykI1bxMp2amJAmcT/18ptbZCdtjbO3nDktAPZRJhffCg4m1VzSTHeC5i/LxAObXC3pHa4F5pbzXNIVD/hGwu2pV0CyXFWTVckNAC1dNxpOBJ2g/PVw==
+ configurations :
+  -
+    name : WD Printing TreeViews
+    internal_properties : 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
+    configuration_id : 2787977209593952030
+    type : 1
+    generation_name : WD Printing TreeViews.exe
+    version :
+     major_version : 21
+     generation_version : 3
+     internal_generation_version : 3
+    icon_filename : .\VST13130-32-5.ico
+    language : 2
+ elements :
+  identifier : 0x4acda46e001a119d
+  elements :
+   -
+     name : cTreeViewPrnt
+     identifier : 0x40db0641000443a1
+     internal_properties : CAAAAAgAAADSKAoerZqSTWqvfKmplT2ycMOfh0SmDNWnI19YWOg0nBj2e+M1y4zuM+3XIeEf2803Pw==
+     physical_name : .\cTreeViewPrnt.wdc
+     type : 4
+   -
+     name : TEST_TreeView
+     identifier : 0x457ec01000355ec8
+     internal_properties : CAAAAAgAAABwaQMSe4kgAG851xkDxWiQtQv2oCDWT4CZZ82hFU7uO6bzYfHLs+EEZ49M7Qn9Bw==
+     physical_name : .\TEST_TreeView.wxt
+     type : 17
+   -
+     name : WIN_TreeView
+     identifier : 0x40db05f8000026a7
+     internal_properties : CAAAAAgAAAD/W9fL+KUNHilyj1i4hSanScSQkBVEeYS2sQo7HOQuohbqafUm2p2BhrAqlh7SriLqag==
+     physical_name : .\WIN_TreeView.wdw
+     type : 2
+  other_elements :
+   -
+     physical_name : .\description.rtf
+   -
+     physical_name : .\description.gif
+   -
+     physical_name : .\Images\accordeon.gif
+   -
+     physical_name : .\Images\ampli.gif
+   -
+     physical_name : .\Images\headset.gif
+   -
+     physical_name : .\Images\clarinet.gif
+   -
+     physical_name : .\Images\keyboard.gif
+   -
+     physical_name : .\Images\falsecheckmark.gif
+   -
+     physical_name : .\Images\truecheckmark.gif
+   -
+     physical_name : .\Images\string.gif
+   -
+     physical_name : .\Images\case.gif
+   -
+     physical_name : .\Images\guitare.gif
+   -
+     physical_name : .\Images\note.gif
+   -
+     physical_name : .\Images\tools.gif
+   -
+     physical_name : .\Images\percu.gif
+   -
+     physical_name : .\Images\piano.gif
+   -
+     physical_name : .\Images\musicstand.gif
+   -
+     physical_name : .\Images\circle.gif
+   -
+     physical_name : .\Images\hollowcircle.gif
+   -
+     physical_name : .\Images\saxophon.gif
+   -
+     physical_name : .\Images\bench.gif
+  analysis : .\WD Printing TreeViews.ana\WD Printing TreeViews.wda
+  net_assemblies : []
+  uwp_api : []
+  external_components : []
+  internal_components : []
+ report_and_queries_enabled : false
+ data_directory : <ExeDirOrDataDirCommon>
+ common_generation_directory : true
+ languages :
+  - en-GB
+ wb_style_sheet : .\WD Printing TreeViewx.wws
+ code_elements :
+  internal_properties : CAAAAAgAAADRSPXVtIAUCDNKzml0xoVtUsXFB65vgacss29M3l4ozI70ChgolekVHUHIiIR+RYX3vYCYA9IYC4g7kDv6vAY=
+  type_code : 0
+  p_codes :
+   -
+     code : |1-
+      
+     type : 196608
+   -
+     code : |1-
+      
+     type : 196610
+   -
+     code : |1-
+      
+     type : 196619
+   -
+     type : 196621
+   -
+     type : 196627
+     enabled : false
+  orphans :
+   -
+     name : WD Printing TreeViews
+     identifier : 0x4acda46e00241342
+     code_elements :
+      type_code : 159
+      p_codes : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+rad :
+ internal_properties : CAAAAAgAAABhIL0UXeZmxDJxY3Xy0Q==
+project_explorer :
+ explorer_type : project
+resources :
+ string_res :
+  identifier : 0x0
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+  strings :
+   -
+     text :
+      en-GB : \treeview.ini
+     index : 0
+custom_note :
+ internal_properties : CAAAAAgAAAAd98VSJfHHqE3P0QHwrwdhn7ig8dWBR6valpUTgnAMTVXiDg==

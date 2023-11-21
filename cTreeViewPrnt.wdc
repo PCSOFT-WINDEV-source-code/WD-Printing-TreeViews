@@ -1,0 +1,571 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : cTreeViewPrnt
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x168ce11901fc798b
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  internal_properties : CAAAAAgAAAD3E4gJhZkr6+yD1Ke/p7kuxumy5VdsyrOYL4DbR41BxAwrwL32LuSAl+qnIEc7Mny9JejcAbED9GfOuPdmGbgBzBAnbuiq73RXs5zOFcrLiXF6iNUGOs0GF4nnXtnD/Ijzt++Ghn55ap/4g+ahowPIvqfWMJPa5zwkD/SZZ5WTuUUFYV9A2lg/mhGKQqiFoyzHqEM6c0x6bQYlsa+OgF6T/DUdw/KBesSct+RT2j72eQ==
+  type_code : 10
+  p_codes :
+   -
+     internal_properties : CAAAAAgAAABpS3y3j21SlhFq56gMB+a/0cuOjAb3Z4tJ8OtGaPWpabt2+LjlAlUhkrlvdqySazxhXPh0BhrpDZ3E59hVG/dbMhrLHn4jSw2nGcEPM/XZKXiSa0KH5v3896/07xT0RLfGUkY8e16oLCK0VQ4=
+     code : |1+
+      cTreeViewPrnt is Class
+      	
+      	// Table for printing offsets
+      	m_arrTreeview is array fixed of 8000 int
+      	
+      	// Name of the treeview
+      	m_sTreeViewName is string
+      	
+      	// Information on the character font
+      	m_nFontNum is int
+      	m_sFontName is string
+      	m_nFontHeight is int
+      	m_nFontAttributes is int
+      	m_nFontMargin is int
+      	m_nCurrentPage is int
+      	
+      	// Information on the row to print (in mm)
+      	m_nRowHeight is int
+      	
+      	// Width of a level to print (in mm)
+      	m_nLevelWidth is int
+      	
+      	// Current position in the page (in mm)
+      	m_nCurrentPos is int
+      	m_nPreviousPos is int
+      	
+      	// Start position in a page (in mm)
+      	m_nStartPos is int
+      	
+      	// End position in a page (in mm)
+      	m_nEndPos is int
+      	
+      	// Right margin (in mm)
+      	m_nRightMargin is int
+      	
+      	// The magenta color is transparent
+      	m_bTransparentMagenta is boolean
+      	m_nColorBorderDocumentHeaderFooter is int
+      	
+      END
+      
+     type : 131072
+  procedures :
+   -
+     name : Constructor
+     internal_properties : CAAAAAgAAABgzw+FRYd2S0O3e5TR11FIgJ1TQQYQCfu1FjxRdOBcxYUzW1otZOEtT7wdjX4ZFXq4M/uAb00O75sGXIBUq+Dgnt5XbU+7W5mtUynsfwIABQXd+Cc8FQIG2ImJnN9uMkuMnPqahzcjbSth84RzVA==
+     procedure_id : 1624921063097727371
+     type_code : 27
+     code : |1+
+      PROCEDURE Constructor(LOCAL sTreeViewName is string, LOCAL nBorderColor is int)
+      
+      //Parameters: 
+      //- TreeViewName: Full name of the TreeView (WindowName.NameTreeViewControl)
+      //- BorderColor: Color of the border for the document header and footer.
+      
+      :Initialization(sTreeViewName, nBorderColor)
+     type : 589824
+   -
+     name : Destructor
+     procedure_id : 1624921063097792907
+     type_code : 28
+     type : 655360
+   -
+     name : StrRowHeight
+     procedure_id : 1624921063097858443
+     type_code : 12
+     code : |1+
+      PROCEDURE TreeViewPrnt::StrRowHeight()
+      
+      // Calculates the height of a row according to the selected font
+      :m_nRowHeight = iTextHeight(iFont(:m_nFontNum) + "X") + (2 * :m_nFontMargin)
+     type : 458752
+   -
+     name : StrLevelWidth
+     procedure_id : 1624921063097923979
+     type_code : 12
+     code : |1+
+      PROCEDURE TreeViewPrnt::StrLevelWidth(LOCAL nLevelWidth is int)
+      
+      :m_nLevelWidth = nLevelWidth
+     type : 458752
+   -
+     name : StrTranspMagenta
+     procedure_id : 1624921063097989515
+     type_code : 12
+     code : |1+
+      PROCEDURE TreeViewPrnt::StrTranspMagenta(LOCAL bTransparentMagenta is boolean)
+      
+      :m_bTransparentMagenta = bTransparentMagenta
+     type : 458752
+   -
+     name : StrRightMargin
+     procedure_id : 1624921063098055051
+     type_code : 12
+     code : |1+
+      PROCEDURE TreeViewPrnt::StrRightMargin(LOCAL nRightMargin is int)
+      
+      :m_nRightMargin = nRightMargin
+     type : 458752
+   -
+     name : ChFont
+     procedure_id : 1624921063098120587
+     type_code : 12
+     code : |1+
+      PROCEDURE TreeViewPrnt::ChFont(LOCAL nNum is int, LOCAL sName is string, LOCAL nFontSize is int, LOCAL nAttributes is int)
+      	
+      :m_nFontNum = nNum
+      :m_sFontName = sName
+      :m_nFontHeight = nFontSize
+      :m_nFontAttributes = nAttributes
+     type : 458752
+   -
+     name : StrStartPos
+     procedure_id : 1624921063098186123
+     type_code : 12
+     code : |1+
+      PROCEDURE TreeViewPrnt::StrStartPos(LOCAL nStartPos is int)
+      
+      :m_nStartPos = nStartPos
+     type : 458752
+   -
+     name : StrEndPos
+     procedure_id : 1624921063098251659
+     type_code : 12
+     code : |1+
+      PROCEDURE TreeViewPrnt::StrEndPos(LOCAL nEndPos is int)
+      
+      :m_nEndPos = nEndPos
+     type : 458752
+   -
+     name : Prints
+     internal_properties : CAAAAAgAAACiiUE+c1OGS1+b8V7PK8noTEF3zdD0ucuxwro/LkDguQHfhw5D1JE9Kzh7g/hJrVLomzOQPd1GUsD7T1VJmBOFK6vkLGikpKA23CS5TLdr8ham0fJBakeN1ba8ERQT9Rj5CU8VpDwoADSKrcKxFg==
+     procedure_id : 1624921063098317195
+     type_code : 12
+     code : |1+
+      PROCEDURE TreeViewPrnt::Prints()
+      
+      // Initializes the current page
+      :m_nCurrentPage = iPageNum()
+      
+      // Create the character font 
+      iCreateFont(:m_nFontNum, :m_nFontHeight, :m_nFontAttributes, :m_sFontName)
+      
+      // Calculate the height of a row
+      :StrRowHeight()
+      
+      // Current Position
+      :m_nCurrentPos = iYPos() + :m_nStartPos
+      :m_nPreviousPos = :m_nCurrentPos
+      
+      // Lists the child elements of the treeview from the root
+      TreeListItem(:m_sTreeViewName, Null, :PrintTreeView)
+     type : 458752
+   -
+     name : PrintElement
+     procedure_id : 1624921063098382731
+     type_code : 12
+     code : |1+
+      PROCEDURE TreeViewPrnt::PrintElement(LOCAL sElement is string, LOCAL nLevel is int, LOCAL nIdentifier is int)
+      
+      nShift is int = 0
+      
+      // Checks whether page skip
+      // in case of a new page, change the current position
+      :CheckCurrentPos()
+      		
+      // Print the image
+      IF :PrintImage(nIdentifier, nLevel)=True THEN
+      	nShift = :m_nRowHeight
+      END
+      
+      iPrint( iFont(:m_nFontNum) + iYPos(:m_nCurrentPos+:m_nFontMargin) +...
+      iXPos(:m_nRightMargin + (nLevel*:m_nLevelWidth) + nShift) + sElement)
+      
+      :m_nPreviousPos = :m_nCurrentPos + :m_nRowHeight
+      :m_nCurrentPos += (:m_nRowHeight*IntegerPart((iYPos()-(:m_nCurrentPos+:m_nFontMargin))/:m_nRowHeight))
+      
+     type : 458752
+   -
+     name : PrintImage
+     procedure_id : 1624921063098448267
+     type_code : 12
+     code : |1+
+      FUNCTION TreeViewPrnt::PrintImage(LOCAL sFile is string, LOCAL nLevel is int)
+      // Returns True if an image is printed
+      
+      // Check the validity of the image file
+      IF ExtractString(BitmapInfo(sFile), 1)<> "BAD" THEN
+      	
+      	// If the magenta color must be transparent
+      	IF :m_bTransparentMagenta = True THEN iTransparentMagenta(True)
+      	
+      	// Print the image
+      	iPrintImage(sFile,
+      	:m_nRightMargin + (nLevel*:m_nLevelWidth), :m_nCurrentPos,
+      	:m_nRightMargin + (nLevel*:m_nLevelWidth) + :m_nRowHeight,
+      	:m_nCurrentPos+:m_nRowHeight)
+      	
+      	iTransparentMagenta(False)
+      	
+      	RESULT True
+      	
+      END
+      
+      RESULT False
+     type : 458752
+   -
+     name : PrintLine
+     procedure_id : 1624921063098513803
+     type_code : 12
+     code : |1+
+      PROCEDURE TreeViewPrnt::PrintLine(LOCAL nR1 is int, LOCAL nC1 is int, LOCAL nR2 is int, LOCAL nC2 is int)
+      
+      rRow2, rColumn2 are reals  
+      
+      // Checks whether page skip
+      // in case of a new page, change the current position
+      :CheckCurrentPos()
+      
+      IF nR2 > iPageHeight() THEN
+      	rRow2 = iPageHeight()
+      ELSE
+      	rRow2 = nR2
+      END
+      
+      IF nC2 > iPageWidth() THEN
+      	rColumn2 = iPageHeight()
+      ELSE
+      	rColumn2 = nC2
+      END	
+      
+      iLine(nC1, nR1, rColumn2, rRow2, 1, iBlack, 1)
+     type : 458752
+   -
+     name : PrintTreeView
+     internal_properties : CAAAAAgAAABeIXt5gPYZx4IFRQmvhSevflDWKY0kififJPbvUQ+xNm6uAb+qnAVrAitq1Xa7apC8xhSECYoQiqjgYXlx97T2oiI3RefNo6Eh9jbndieFaJpqrX77kv68i0h3JWwfzeAxASfdwvOHBdU7Wv1a5da5TJZvW2r/44TWbz9qrco=
+     procedure_id : 1624921063098579339
+     type_code : 12
+     code : |1+
+      PROCEDURE PRIVATE TreeViewPrnt::PrintTreeView(LOCAL sTVName is string, LOCAL sPath is string, LOCAL sElement is string, LOCAL nLevel is int, LOCAL nPointer is int <useful>)
+      
+      Identifier is string // Contains the identifier of the current level (if the identifier contains an image, it is printed)
+      nBound is int
+      
+      
+      // This procedure is called by TreeListItem() for each treeview element.
+      sTVName = :m_sTreeViewName
+      
+      // Store the number of child elements found in the current element
+      :m_arrTreeview[nLevel] = TreeCount(sTVName, sPath+sElement, tvOneLevel)
+      
+      // If we are not positioned the root, decrement the number of child elements
+      // Level is the level of the child element, (Level-1) is the level of the parent element
+      IF nLevel <> 1 THEN
+      	:m_arrTreeview[nLevel-1]--
+      END
+      
+      // Retrieve the identifier
+      Identifier = TreeIdentifier(sTVName, sPath+sElement)
+      
+      // Print the level
+      IF nLevel > 1 THEN
+      	nBound = (nLevel - 1)
+      	FOR i = 1 TO nBound
+      		
+      		// Checks whether page skip
+      		// in case of a new page, change the current position
+      		:CheckCurrentPos()
+      		
+      		// print the line for the current level
+      		IF (i = (nLevel - 1) ) THEN
+      			
+      			SWITCH :m_arrTreeview[i]
+      			
+      				CASE 0: // it's the last child element, print a return
+      					:ReturnLine(i, sElement, Identifier)
+      					
+      				OTHER CASE: // child elements are still found, print a crossing
+      					:CrossingLine(i, sElement, Identifier)
+      					
+      			END
+      			
+      		ELSE
+      			
+      			// Print the line for any level
+      			SWITCH :m_arrTreeview[i]
+      			
+      				CASE 0: // no child element found for this level so no line to print
+      					
+      				OTHER CASE: // child elements are still found, print a vertical line
+      					:VerticalLine(i)
+      					
+      			END
+      			
+      		END
+      		
+      	END
+      	
+      ELSE
+      	// Special case for the root 
+      	:PrintElement(sElement, 0, Identifier)
+      END
+      
+      // Increases the current position by the height of a row
+      :m_nCurrentPos += :m_nRowHeight
+      // Skips a page if the print border is exceeded
+      IF :m_nCurrentPos > :m_nEndPos THEN
+      	iSkipPage
+      	:m_nCurrentPos = :m_nStartPos
+      END
+     type : 458752
+   -
+     name : Initialization
+     internal_properties : CAAAAAgAAADoeXKfKGlDcPfSkY17C/mTOz2h5xHgkfxndP6r7c9JLn5eJZOmjDmPIqPq6aqDYoBMbpgQXeKUzsAICT3Fb2TM7LSRv/HX1ROrYLh9AImHXvyUF+htbLDujXoxW565j5ZDC6lP/OX54y9dbop+dM2yqRskNiwcYwL3KF4SWzw=
+     procedure_id : 1624921063098644875
+     type_code : 12
+     code : |1+
+      PROCEDURE TreeViewPrnt::Initialization(LOCAL sTreeViewName is string, LOCAL nBorderColor is int)
+      //Parameters: 
+      //- TreeViewName: Full name of the TreeView (WindowName.NameTreeViewControl)
+      //- BorderColor: Color of the border for the document header and footer.
+      
+      :m_sTreeViewName = sTreeViewName
+      
+      // Default value for the font
+      :m_nFontNum = 999
+      :m_sFontName = "Arial"
+      :m_nFontHeight = 10 
+      :m_nFontAttributes = iNormal
+      :m_nFontMargin = 1
+      
+      // Print area
+      :m_nStartPos = 20
+      :m_nEndPos = iPageHeight()
+      :m_nRightMargin = 20
+      
+      // Level
+      :m_nLevelWidth = 10
+      
+      // The magenta color is transparent
+      :m_bTransparentMagenta = True
+      
+      // Border Color
+      :m_nColorBorderDocumentHeaderFooter = nBorderColor
+     type : 458752
+   -
+     name : GetLevelWidth
+     procedure_id : 1624921063098710411
+     type_code : 12
+     code : |1-
+      PROCEDURE TreeViewPrnt::GetLevelWidth()
+      
+      RESULT :m_nLevelWidth
+     type : 458752
+   -
+     name : GetTranspMagenta
+     procedure_id : 1624921063098775947
+     type_code : 12
+     code : |1-
+      PROCEDURE TreeViewPrnt::GetTranspMagenta()
+      
+      RESULT :m_bTransparentMagenta
+     type : 458752
+   -
+     name : GetRightMargin
+     procedure_id : 1624921063098841483
+     type_code : 12
+     code : |1-
+      PROCEDURE TreeViewPrnt::GetRightMargin()
+      
+      RESULT :m_nRightMargin
+     type : 458752
+   -
+     name : GetFont
+     procedure_id : 1624921063098907019
+     type_code : 12
+     code : |1-
+      PROCEDURE TreeViewPrnt::GetFont()
+      
+      RESULT :m_sFontName +TAB+ :m_nFontHeight +TAB+ :m_nFontAttributes
+     type : 458752
+   -
+     name : GetStartPos
+     procedure_id : 1624921063098972555
+     type_code : 12
+     code : |1-
+      PROCEDURE TreeViewPrnt::GetStartPos()
+      
+      RESULT :m_nStartPos
+     type : 458752
+   -
+     name : GetEndPos
+     procedure_id : 1624921063099038091
+     type_code : 12
+     code : |1-
+      PROCEDURE TreeViewPrnt::GetEndPos()
+      
+      RESULT :m_nEndPos
+     type : 458752
+   -
+     name : CrossingLine
+     procedure_id : 1624921063099103627
+     type_code : 12
+     code : |1-
+      PROCEDURE TreeViewPrnt::CrossingLine(LOCAL nLevel is int, LOCAL sElement is string, LOCAL nIdentifier is int)
+      
+      // Prints |
+      //:CurrentPos
+      :PrintLine(...
+      :m_nPreviousPos,
+      :m_nRightMargin + ((nLevel-1)*:m_nLevelWidth) + (:m_nLevelWidth/2),
+      :m_nCurrentPos + :m_nRowHeight,
+      :m_nRightMargin + ((nLevel-1)*:m_nLevelWidth) + (:m_nLevelWidth/2))
+      
+      // Prints the return
+      //:CurrentPos
+      :PrintLine(...
+      :m_nCurrentPos + (:m_nRowHeight/2),
+      :m_nRightMargin + ((nLevel-1)*:m_nLevelWidth) + (:m_nLevelWidth/2),
+      :m_nCurrentPos + (:m_nRowHeight/2),
+      :m_nRightMargin + ((nLevel-1)*:m_nLevelWidth) + (:m_nLevelWidth/2) + (:m_nLevelWidth/4))
+      
+      // Prints the name of the element
+      :PrintElement(sElement, nLevel, nIdentifier)
+     type : 458752
+   -
+     name : ReturnLine
+     procedure_id : 1624921063099169163
+     type_code : 12
+     code : |1+
+      PROCEDURE TreeViewPrnt::ReturnLine(LOCAL nLevel is int, LOCAL sElement is string, LOCAL nIdentifier is int)
+      
+      // Prints |
+      //:CurrentPos
+      :PrintLine(...
+      :m_nPreviousPos,
+      :m_nRightMargin + ((nLevel-1)*:m_nLevelWidth) + (:m_nLevelWidth/2),
+      :m_nCurrentPos +  (:m_nRowHeight/2),
+      :m_nRightMargin + ((nLevel-1)*:m_nLevelWidth) + (:m_nLevelWidth/2))
+      
+      // Prints the return
+      //:CurrentPos
+      :PrintLine(...
+      :m_nPreviousPos + (:m_nRowHeight/2),
+      :m_nRightMargin + ((nLevel-1)*:m_nLevelWidth) + (:m_nLevelWidth/2),
+      :m_nPreviousPos + (:m_nRowHeight/2),
+      :m_nRightMargin + ((nLevel-1)*:m_nLevelWidth) + (:m_nLevelWidth/2) + (:m_nLevelWidth/4))
+      
+      // Prints the name of the element
+      :PrintElement(sElement, nLevel, nIdentifier)
+     type : 458752
+   -
+     name : VerticalLine
+     procedure_id : 1624921063099234699
+     type_code : 12
+     code : |1+
+      PROCEDURE TreeViewPrnt::VerticalLine(LOCAL nLevel is int)
+      
+      // Checks whether page skip
+      // in case of a new page, change the current position
+      :CheckCurrentPos()
+      
+      // Prints |
+      :PrintLine(...
+      :m_nCurrentPos,
+      :m_nRightMargin + ((nLevel-1)*:m_nLevelWidth) + (:m_nLevelWidth/2),
+      :m_nCurrentPos + :m_nRowHeight,
+      :m_nRightMargin + ((nLevel-1)*:m_nLevelWidth) + (:m_nLevelWidth/2))
+     type : 458752
+   -
+     name : CheckCurrentPos
+     procedure_id : 1624921063099300235
+     type_code : 12
+     code : |1+
+      PROCEDURE TreeViewPrnt::CheckCurrentPos()
+      
+      // Checks whether page skip
+      // in case of a new page, change the current position
+      
+      // Sufficient height to print the next level?
+      IF :m_nRowHeight + iYPos() > iPageHeight() THEN
+      	iSkipPage()
+      END
+      		
+      IF :m_nCurrentPage <> iPageNum() THEN
+      	:m_nCurrentPage = iPageNum()
+      	:m_nCurrentPos = :m_nStartPos
+      	:m_nPreviousPos = :m_nStartPos
+      END
+     type : 458752
+   -
+     name : PrintTitle
+     internal_properties : CAAAAAgAAAClDdKD0rmz+vCBzrBRwFrGhZm2Iwlw4tDBOkUJJPpeqBS51HwVoOslfEsuqwz9yljCof5zpXXHVofy0Sx/FQG8rUytcfo2Ev98QEt7HMrGMJOORWTMY41WaGbi+2jEQIIQj0EVFUq8WSZNy/3EWINj1UTJC3so6nLbMTwV2+gS
+     procedure_id : 1624921063099365771
+     type_code : 12
+     code : |1+
+      PROCEDURE PrintTitle(LOCAL sTitle1 is string = "", LOCAL sTitle2 is string = "")
+      // Print the title of the document
+      
+      // Create the fonts 
+      iCreateFont(1, 20, iBold, "Arial", iWhite)
+      iCreateFont(2, 20, iBold, "Arial", iYellowToolhelp)
+      
+      // Print a border for the document header
+      iBorder(0, 17, iPageWidth(), 17+15, 1, 100, :m_nColorBorderDocumentHeaderFooter)
+      
+      iYPos(20)
+      iPrintWord(iFont(2) + iXPos(20) + sTitle1)
+      iPrintWord(iFont(1) + iXPos(70) + sTitle2)
+     type : 458752
+   -
+     name : iPrintEndDocument
+     procedure_id : 1624921063099431307
+     type_code : 12
+     code : |1-
+      // Syntax:
+      //iPrintEndDocument ()
+      //Print a document footer 
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      
+      PROCEDURE iPrintEndDocument()
+      
+      iYPos(iYPos() + 10)
+      iBorder(0, iYPos(), iPageWidth(), iYPos()+10, 1, 100, :m_nColorBorderDocumentHeaderFooter)
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : TreeImp
+resources :
+ string_res :
+  identifier : 0x40b6f7c235d6ff98
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+  strings :
+   -
+     text :
+      en-GB : Arial
+     index : 0
+   -
+     text :
+      en-GB : X
+     index : 1
+   -
+     text :
+      en-GB : BAD
+     index : 2
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ
